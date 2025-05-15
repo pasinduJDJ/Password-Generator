@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand ms-5" href="#">
+                <img src="./assets/Root.png" alt="Logo" width="95" class="d-inline-block ms-5">
+                <b class="text-uppercase fw-bolder fs-4 mx-4" style="color: #c2131f; letter-spacing: 1px;">Strong Password Generator </b>
+            </a>
+    </nav>
+    <div class="main">
+        <div class="box">
+            <span id="pass-box"></span>
+
+            <div class="row my-2">
+                <div class="col-8">
+                    Password Length
+                </div>
+                <div class="col-4">
+                    <input type="number" id="total-char" max="30" min="2" value="10">
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-8">
+                    Contain Uppercase
+                </div>
+                <div class="col-4">
+                    <input type="checkbox" id="upper-case" checked>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-8">
+                    Contain Lowercase
+                </div>
+                <div class="col-4">
+                    <input type="checkbox" id="lower-case" checked>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-8">
+                    Contain numbers
+                </div>
+                <div class="col-4">
+                    <input type="checkbox" id="numbers">
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-8">
+                    Contain symbol
+                </div>
+                <div class="col-4">
+                    <input type="checkbox" id="symbols">
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <button id="btn" class="btn text-white" style="background-color: #c2131f;">
+                    Generate
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
