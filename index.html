@@ -11,64 +11,81 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <a class="navbar-brand ms-5" href="#">
                 <img src="./assets/Root.png" alt="Logo" width="95" class="d-inline-block ms-5">
                 <b class="text-uppercase fw-bolder fs-4 mx-4" style="color: #c2131f; letter-spacing: 1px;">Strong Password Generator </b>
             </a>
-    </nav>
+    </nav> -->
+
     <div class="main">
-        <div class="box">
-            <span id="pass-box"></span>
-
-            <div class="row my-2">
-                <div class="col-8">
-                    Password Length
-                </div>
-                <div class="col-4">
-                    <input type="number" id="total-char" max="30" min="2" value="10">
-                </div>
-            </div>
-            <div class="row mb-2">
-                <div class="col-8">
-                    Contain Uppercase
-                </div>
-                <div class="col-4">
-                    <input type="checkbox" id="upper-case" checked>
-                </div>
-            </div>
-            <div class="row mb-2">
-                <div class="col-8">
-                    Contain Lowercase
-                </div>
-                <div class="col-4">
-                    <input type="checkbox" id="lower-case" checked>
-                </div>
-            </div>
-            <div class="row mb-2">
-                <div class="col-8">
-                    Contain numbers
-                </div>
-                <div class="col-4">
-                    <input type="checkbox" id="numbers">
-                </div>
-            </div>
-            <div class="row mb-2">
-                <div class="col-8">
-                    Contain symbol
-                </div>
-                <div class="col-4">
-                    <input type="checkbox" id="symbols">
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <button id="btn" class="btn text-white" style="background-color: #c2131f;">
-                    Generate
-                </button>
-            </div>
+        <div class="col-3">
 
         </div>
+        <div class="col-6 d-block">
+            <div class="row" style="margin-top: 100px;">
+                <h1 class="mb-5 head-text"><img src="./assets/Pasindu_JDJ-removebg-preview.png" alt="Logo" width="100"
+                        class="d-inline-block ms-5">Strong Password Generator</h1>
+            </div>
+            <div class="row align-items-center justify-content-around">
+                <div class="col-6">
+
+                    <span id="pass-box"> Random Password</span>
+
+                    <div class="row my-2">
+                        <div class="col-8 text-white">
+                            Password Length
+                        </div>
+                        <div class="col-4 text-end">
+                            <input type="number" id="total-char" max="30" min="2" value="10">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-8 text-white">
+                            Contain Uppercase
+                        </div>
+                        <div class="col-4 text-end">
+                            <input type="checkbox" id="upper-case" checked>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-8 text-white">
+                            Contain Lowercase
+                        </div>
+                        <div class="col-4 text-end">
+                            <input type="checkbox" id="lower-case" checked>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-8 text-white">
+                            Contain numbers
+                        </div>
+                        <div class="col-4 text-end">
+                            <input type="checkbox" id="numbers">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-8 text-white">
+                            Contain symbol
+                        </div>
+                        <div class="col-4 text-end">
+                            <input type="checkbox" id="symbols">
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <button id="btn" class="btn text-white" style="background-color: #c2131f;">
+                            Generate
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+
+        </div>
+
     </div>
     <script src="js/app.js"></script>
 </body>
